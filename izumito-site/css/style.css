@@ -997,3 +997,15 @@ textarea { resize: vertical; min-height: 100px; }
     .contact-form-wrapper { padding: 24px; }
     .shimoswa-charm { padding: 24px 20px; }
 }
+
+/* ロゴの大きさを調整 */
+.nav-logo .logo-en {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* 【解決策】スクロールした時にロゴを濃い茶色にする */
+.navbar.scrolled .nav-logo {
+    color: var(--color-dark) !important;
+}
