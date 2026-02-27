@@ -463,20 +463,47 @@
                 <h2 class="section-title">お問い合わせ</h2>
                 <p>2026年3月オープンに向けて、入居者を募集中です。</p>
             </div>
-            <div class="contact-form-wrapper" style="max-width:600px; margin:0 auto; background:white; padding:40px; border-radius:20px;">
-                <form class="contact-form" id="contactForm" method="POST" data-netlify="true" name="contact">
-                    <!-- Netlify用の隠しフィールド（これがないとエラーになります） -->
-                    <input type="hidden" name="form-name" value="contact">
-                    
-                    <div class="form-group"><label style="color:var(--color-dark); font-weight:bold;">お名前 *</label><input type="text" name="name" required style="width:100%; padding:10px; margin-top:5px; border:1px solid #ddd; border-radius:5px;"></div>
-                    <div class="form-group" style="margin-top:20px;"><label style="color:var(--color-dark); font-weight:bold;">メールアドレス *</label><input type="email" name="email" required style="width:100%; padding:10px; margin-top:5px; border:1px solid #ddd; border-radius:5px;"></div>
-                    <div class="form-group" style="margin-top:20px;"><label style="color:var(--color-dark); font-weight:bold;">内容 *</label><select name="interest" required style="width:100%; padding:10px; margin-top:5px; border:1px solid #ddd; border-radius:5px;"><option value="入居希望">入居希望</option><option value="内見予約">内見予約</option><option value="その他">その他</option></select></div>
-                    <div class="form-group" style="margin-top:20px;"><label style="color:var(--color-dark); font-weight:bold;">メッセージ *</label><textarea name="message" rows="5" required style="width:100%; padding:10px; margin-top:5px; border:1px solid #ddd; border-radius:5px;"></textarea></div>
-                    
-                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn" style="width:100%; margin-top:30px; font-size:1.1rem;">
-                        <span class="btn-text">送信する</span>
-                    </button>
-                </form>
+
+            <div class="contact-layout">
+                <!-- 左側：入力フォーム -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" method="POST" data-netlify="true" name="contact">
+                        <input type="hidden" name="form-name" value="contact">
+                        <div class="form-group"><label>お名前 *</label><input type="text" name="name" required></div>
+                        <div class="form-group"><label>メールアドレス *</label><input type="email" name="email" required></div>
+                        <div class="form-group">
+                            <label>内容 *</label>
+                            <select name="interest" required>
+                                <option value="入居希望">入居希望</option>
+                                <option value="内見予約">内見予約</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>メッセージ *</label><textarea name="message" rows="5" required></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">送信する</button>
+                    </form>
+                </div>
+
+                <!-- 右側：SNS・LINEの案内 -->
+                <div class="contact-sns-info">
+                    <div class="sns-card">
+                        <h4>公式SNS・LINE</h4>
+                        <p>QRコードからもお気軽にお問い合わせ・フォローいただけます。</p>
+                        <div class="qr-grid">
+                            <div class="qr-item">
+                                <img src="images/insta-qr.jpg" alt="Instagram QR">
+                                <span>Instagram</span>
+                            </div>
+                            <div class="qr-item">
+                                <img src="images/line-qr.jpg" alt="LINE QR">
+                                <span>公式LINE</span>
+                            </div>
+                        </div>
+                        <div class="sns-id-list">
+                            <p><i class="fab fa-instagram"></i> @IZUMITO_SHIMOSUWA</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
