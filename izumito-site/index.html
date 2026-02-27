@@ -201,37 +201,25 @@
                 </div>
             </div>
 
-            <!-- 共益費のボックス（デザイン再現版） -->
-            <div class="common-fee" style="border-radius:15px; overflow:hidden; box-shadow:var(--shadow); margin-top:40px;">
+            <!-- 共益費のボックス（スマホ対応版） -->
+            <div class="common-fee-card">
                 <!-- 上段：ヘッダー部分 -->
-                <div style="background:var(--color-dark); color:white; padding:20px 30px; display:flex; justify-content:space-between; align-items:center;">
-                    <p style="font-size:0.85rem; margin:0; opacity:0.8;">月額料金に加えてお支払いいただきます</p>
-                    <div style="font-family:var(--font-serif); font-size:1.8rem; font-weight:bold; color:var(--color-accent);">
-                        ¥15,000<span style="font-size:1rem; font-weight:normal; color:rgba(255,255,255,0.6);">/月</span>
+                <div class="common-fee-header">
+                    <p class="common-fee-note">月額料金に加えてお支払いいただきます</p>
+                    <div class="common-fee-price-box">
+                        ¥15,000<span class="unit">/月</span>
                     </div>
                 </div>
                 <!-- 下段：リスト部分 -->
-                <div style="background:white; padding:30px 40px; color:var(--color-dark);">
-                    <h5 style="font-size:0.9rem; margin-bottom:25px; font-weight:bold; letter-spacing:1px;">共益費に含まれるもの</h5>
-                    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:20px;">
-                        <div style="display:flex; align-items:center; gap:12px; font-size:0.85rem;">
-                            <i class="fas fa-wifi" style="color:var(--color-accent); width:20px; font-size:1.1rem;"></i>Wi-Fi利用
-                        </div>
-                        <div style="display:flex; align-items:center; gap:12px; font-size:0.85rem;">
-                            <i class="fas fa-laptop" style="color:var(--color-accent); width:20px; font-size:1.1rem;"></i>ワークスペース利用
-                        </div>
-                        <div style="display:flex; align-items:center; gap:12px; font-size:0.85rem;">
-                            <i class="fas fa-bolt" style="color:var(--color-accent); width:20px; font-size:1.1rem;"></i>水道光熱費
-                        </div>
-                        <div style="display:flex; align-items:center; gap:12px; font-size:0.85rem;">
-                            <i class="fas fa-toilet-paper" style="color:var(--color-accent); width:20px; font-size:1.1rem;"></i>トイレットペーパー
-                        </div>
-                        <div style="display:flex; align-items:center; gap:12px; font-size:0.85rem;">
-                            <i class="fas fa-soap" style="color:var(--color-accent); width:20px; font-size:1.1rem;"></i>共用部消耗品
-                        </div>
-                        <div style="display:flex; align-items:center; gap:12px; font-size:0.85rem;">
-                            <i class="fas fa-bicycle" style="color:var(--color-accent); width:20px; font-size:1.1rem;"></i>駐輪スペース
-                        </div>
+                <div class="common-fee-body">
+                    <h5 class="common-fee-title">共益費に含まれるもの</h5>
+                    <div class="common-fee-grid">
+                        <div class="fee-item"><i class="fas fa-wifi"></i>Wi-Fi利用</div>
+                        <div class="fee-item"><i class="fas fa-laptop"></i>ワークスペース利用</div>
+                        <div class="fee-item"><i class="fas fa-bolt"></i>水道光熱費</div>
+                        <div class="fee-item"><i class="fas fa-toilet-paper"></i>トイレットペーパー</div>
+                        <div class="fee-item"><i class="fas fa-soap"></i>共用部消耗品</div>
+                        <div class="fee-item"><i class="fas fa-bicycle"></i>駐輪スペース</div>
                     </div>
                 </div>
             </div>
@@ -267,15 +255,15 @@
                         </div>
                     </div>
 
-                    <!-- プラン内容 -->
-                    <h5 style="font-size: 0.8rem; color: var(--color-gray); margin-bottom: 10px; font-weight: normal;">プラン内容（入居者以外：¥10,000/月）</h5>
-                    <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px;">
-                        <li style="font-size: 0.85rem; display: flex; align-items: center; gap: 8px;"><i class="fas fa-check" style="color: #6b8f5e; font-size: 0.7rem;"></i>住所利用（名刺・HP・請求書等）</li>
-                        <li style="font-size: 0.85rem; display: flex; align-items: center; gap: 8px;"><i class="fas fa-check" style="color: #6b8f5e; font-size: 0.7rem;"></i>法人登記（本店所在地）</li>
-                        <li style="font-size: 0.85rem; display: flex; align-items: center; gap: 8px;"><i class="fas fa-check" style="color: #6b8f5e; font-size: 0.7rem;"></i>郵送物の再配達対応(送料実費)</li>
-                        <li style="font-size: 0.85rem; display: flex; align-items: center; gap: 8px;"><i class="fas fa-check" style="color: #6b8f5e; font-size: 0.7rem;"></i>専用ロッカー</li>
-                        <li style="font-size: 0.85rem; display: flex; align-items: center; gap: 8px;"><i class="fas fa-check" style="color: #6b8f5e; font-size: 0.7rem;"></i>ワークスペース利用（9:00〜17:00）</li>
-                        <li style="font-size: 0.85rem; display: flex; align-items: center; gap: 8px;"><i class="fas fa-check" style="color: #6b8f5e; font-size: 0.7rem;"></i>年4回のゲスト宿泊無料</li>
+                    <!-- プラン内容（スマホ対応版） -->
+                    <h5 class="business-plan-title">プラン内容（入居者以外：¥10,000/月）</h5>
+                    <ul class="business-plan-list">
+                        <li><i class="fas fa-check"></i>住所利用（名刺・HP・請求書等）</li>
+                        <li><i class="fas fa-check"></i>法人登記（本店所在地）</li>
+                        <li><i class="fas fa-check"></i>郵送物の再配達対応(送料実費)</li>
+                        <li><i class="fas fa-check"></i>専用ロッカー</li>
+                        <li><i class="fas fa-check"></i>ワークスペース利用（9:00〜17:00）</li>
+                        <li><i class="fas fa-check"></i>年4回のゲスト宿泊無料</li>
                     </ul>
                 </div>
             </div>
@@ -386,83 +374,85 @@
     </section>
 
     <!-- Flow -->
-    <section class="section" id="flow">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Flow</span>
-                <h2 class="section-title">入居までの流れ</h2>
-                <p class="section-desc">シンプルな入居プロセス。まずはお気軽にお問い合わせください。</p>
+<section class="section" id="flow">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Flow</span>
+            <h2 class="section-title">入居までの流れ</h2>
+            <p class="section-desc">シンプルな入居プロセス。まずはお気軽にお問い合わせください。</p>
+        </div>
+
+        <!-- ステップ一覧（縦並び） -->
+        <div style="max-width: 650px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+            
+            <!-- 01 お問い合わせ -->
+            <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
+                <!-- flex-shrink: 0; を追加 -->
+                <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px; flex-shrink: 0;">01</span>
+                <!-- flex-shrink: 0; を追加 -->
+                <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent); flex-shrink: 0;">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 5px; font-weight: bold;">お問い合わせ</h4>
+                    <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">フォームまたはメール・電話でお気軽にお問い合わせください。ご質問にも丁寧にお答えします。</p>
+                </div>
             </div>
+            <i class="fas fa-chevron-down" style="margin: 15px 0; color: #ddd;"></i>
 
-            <!-- ステップ一覧（縦並び） -->
-            <div style="max-width: 650px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
-                
-                <!-- 01 お問い合わせ -->
-                <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
-                    <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px;">01</span>
-                    <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent);">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div style="text-align: left;">
-                        <h4 style="margin-bottom: 5px; font-weight: bold;">お問い合わせ</h4>
-                        <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">フォームまたはメール・電話でお気軽にお問い合わせください。ご質問にも丁寧にお答えします。</p>
-                    </div>
+            <!-- 02 内見・面談 -->
+            <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
+                <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px; flex-shrink: 0;">02</span>
+                <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent); flex-shrink: 0;">
+                    <i class="fas fa-eye"></i>
                 </div>
-                <i class="fas fa-chevron-down" style="margin: 15px 0; color: #ddd;"></i>
-
-                <!-- 02 内見・面談 -->
-                <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
-                    <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px;">02</span>
-                    <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent);">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <div style="text-align: left;">
-                        <h4 style="margin-bottom: 5px; font-weight: bold;">内見・面談</h4>
-                        <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">実際に物件をご覧いただきます。雰囲気や設備、周辺環境を確認してください。オンライン内見も対応可能です。</p>
-                    </div>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 5px; font-weight: bold;">内見・面談</h4>
+                    <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">実際に物件をご覧いただきます。雰囲気や設備、周辺環境を確認してください。オンライン内見も対応可能です。</p>
                 </div>
-                <i class="fas fa-chevron-down" style="margin: 15px 0; color: #ddd;"></i>
+            </div>
+            <i class="fas fa-chevron-down" style="margin: 15px 0; color: #ddd;"></i>
 
-                <!-- 03 申込 -->
-                <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
-                    <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px;">03</span>
-                    <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent);">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div style="text-align: left;">
-                        <h4 style="margin-bottom: 5px; font-weight: bold;">申込</h4>
-                        <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">入居を決められたら申込書をご提出ください。必要書類をご案内いたします。</p>
-                    </div>
+            <!-- 03 申込 -->
+            <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
+                <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px; flex-shrink: 0;">03</span>
+                <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent); flex-shrink: 0;">
+                    <i class="fas fa-file-alt"></i>
                 </div>
-                <i class="fas fa-chevron-down" style="margin: 15px 0; color: #ddd;"></i>
-
-                <!-- 04 契約 -->
-                <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
-                    <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px;">04</span>
-                    <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent);">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div style="text-align: left;">
-                        <h4 style="margin-bottom: 5px; font-weight: bold;">契約</h4>
-                        <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">契約書の確認・締結を行います。入居日や初期費用についてご案内します。</p>
-                    </div>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 5px; font-weight: bold;">申込</h4>
+                    <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">入居を決められたら申込書をご提出ください。必要書類をご案内いたします。</p>
                 </div>
-                <i class="fas fa-chevron-down" style="margin: 15px 0; color: #ddd;"></i>
+            </div>
+            <i class="fas fa-chevron-down" style="margin: 15px 0; color: #ddd;"></i>
 
-                <!-- 05 入居 -->
-                <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
-                    <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px;">05</span>
-                    <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent);">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <div style="text-align: left;">
-                        <h4 style="margin-bottom: 5px; font-weight: bold;">入居</h4>
-                        <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">ようこそIZUMITOへ！新しい暮らしの始まりです。住人同士の交流を楽しみながら、充実した日々を。</p>
-                    </div>
+            <!-- 04 契約 -->
+            <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
+                <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px; flex-shrink: 0;">04</span>
+                <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent); flex-shrink: 0;">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 5px; font-weight: bold;">契約</h4>
+                    <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">契約書の確認・締結を行います。入居日や初期費用についてご案内します。</p>
+                </div>
+            </div>
+            <i class="fas fa-chevron-down" style="margin: 15px 0; color: #ddd;"></i>
+
+            <!-- 05 入居 -->
+            <div style="width: 100%; background: white; padding: 25px 30px; border-radius: 15px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px;">
+                <span style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); opacity: 0.5; font-weight: bold; min-width: 50px; flex-shrink: 0;">05</span>
+                <div style="width: 40px; height: 40px; background: var(--color-beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent); flex-shrink: 0;">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 5px; font-weight: bold;">入居</h4>
+                    <p style="font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.6;">ようこそIZUMITOへ！新しい暮らしの始まりです。住人同士の交流を楽しみながら、充実した日々を。</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact -->
     <section class="section section-dark" id="contact">
@@ -492,7 +482,7 @@
 
     <footer class="footer" style="background:#2c2c2c; color:white; padding:60px 0; text-align:center;">
         <div class="container">
-            <h3 style="font-family:var(--font-serif); font-size:1.5rem;">泉人 IZUMITO</h3>
+            <h3 style="font-family:var(--font-serif); font-size:1.5rem;">IZUMITO SHARE PLACE</h3>
             <p style="opacity:0.5; margin-top:10px;">&copy; 2026 IZUMITO. All Rights Reserved.</p>
         </div>
     </footer>
@@ -512,3 +502,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
