@@ -1269,3 +1269,75 @@ textarea { resize: vertical; min-height: 100px; }
         grid-template-columns: 1fr;
     }
 }
+
+/* リビング画像だけ「引き」にする設定 */
+.facility-image-area.living-zoom {
+    height: 450px; /* 【重要】高さを350pxから450pxに広げて、より縦を長く見せます */
+}
+
+.facility-image-area.living-zoom .facility-img {
+    object-position: center 20%; /* 【重要】表示位置を少し「上寄り」にします。これで天井のライトが入りやすくなります */
+    object-fit: cover; /* 枠いっぱいに広げる設定は維持 */
+}
+
+/* スマホでは縦が長すぎると見づらいので少し抑える調整 */
+@media (max-width: 768px) {
+    .facility-image-area.living-zoom {
+        height: 350px; /* スマホではこのくらいがバランスが良いです */
+    }
+}
+
+/* SNSリンクボタンのデザイン */
+.sns-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* Instagramボタン（少しお洒落なグラデーション風） */
+.sns-link-btn.insta {
+    background: #f0f0f0;
+    color: #E1306C;
+    border: 1px solid #E1306C;
+}
+.sns-link-btn.insta:hover {
+    background: #E1306C;
+    color: white;
+}
+
+/* LINEボタン（LINEカラー） */
+.sns-link-btn.line {
+    background: #f0f0f0;
+    color: #06C755;
+    border: 1px solid #06C755;
+}
+.sns-link-btn.line:hover {
+    background: #06C755;
+    color: white;
+}
+
+/* QRコード画像にマウスを乗せた時の演出 */
+.qr-item a img {
+    transition: transform 0.3s ease;
+}
+.qr-item a:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* IDテキストの調整 */
+.sns-id-list {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px dotted #ccc;
+    font-size: 0.8rem;
+    color: var(--color-gray-600);
+}

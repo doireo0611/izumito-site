@@ -98,8 +98,8 @@
             <div class="facilities-showcase">
                 <!-- リビング・キッチン -->
                 <div class="facility-showcase-item">
-                    <div class="facility-image-area">
-                        <!-- 写真に差し替え -->
+                    <!-- クラス名に area-wide を追加しました -->
+                    <div class="facility-image-area area-wide">
                         <img src="images/living.jpg" alt="共用リビング・キッチン" class="facility-img">
                         <div class="facility-badge">共用スペース</div>
                     </div>
@@ -484,23 +484,36 @@
                     </form>
                 </div>
 
-                <!-- 右側：SNS・LINEの案内 -->
+                <!-- 右側：SNS・LINEの案内（リンク追加版） -->
                 <div class="contact-sns-info">
                     <div class="sns-card">
                         <h4>公式SNS・LINE</h4>
-                        <p>QRコードからもお気軽にお問い合わせ・フォローいただけます。</p>
+                        <p>画像タップ、または下のボタンから<br>直接アプリを開けます。</p>
+                        
                         <div class="qr-grid">
+                            <!-- Instagram -->
                             <div class="qr-item">
-                                <img src="images/insta-qr.jpg" alt="Instagram QR">
-                                <span>Instagram</span>
+                                <a href="https://www.instagram.com/izumito_shimosuwa" target="_blank" rel="noopener">
+                                    <img src="images/insta-qr.jpg" alt="Instagram QR">
+                                </a>
+                                <a href="https://www.instagram.com/izumito_shimosuwa" target="_blank" rel="noopener" class="sns-link-btn insta">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
                             </div>
+                            
+                            <!-- LINE -->
                             <div class="qr-item">
-                                <img src="images/line-qr.jpg" alt="LINE QR">
-                                <span>公式LINE</span>
+                                <a href="https://line.me/ti/p/cd-tvZKZMl" target="_blank" rel="noopener">
+                                    <img src="images/line-qr.jpg" alt="LINE QR">
+                                </a>
+                                <a href="https://line.me/ti/p/cd-tvZKZMl" target="_blank" rel="noopener" class="sns-link-btn line">
+                                    <i class="fab fa-line"></i> 公式LINE
+                                </a>
                             </div>
                         </div>
+
                         <div class="sns-id-list">
-                            <p><i class="fab fa-instagram"></i> @IZUMITO_SHIMOSUWA</p>
+                            <p>ID: @IZUMITO_SHIMOSUWA</p>
                         </div>
                     </div>
                 </div>
