@@ -1270,20 +1270,31 @@ textarea { resize: vertical; min-height: 100px; }
     }
 }
 
-/* リビング画像だけ「引き」にする設定 */
-.facility-image-area.living-zoom {
-    height: 450px; /* 【重要】高さを350pxから450pxに広げて、より縦を長く見せます */
+/* --- リビング・キッチンの画像調整 --- */
+.facility-image-area.area-wide {
+    height: 650px; /* 【さらに拡大】500pxから650pxに。これでライトまでしっかり入ります */
+}
+.facility-image-area.area-wide .facility-img {
+    object-position: center 10%; /* 【位置調整】より上の方を表示するように変更 */
+    object-fit: cover;
 }
 
-.facility-image-area.living-zoom .facility-img {
-    object-position: center 20%; /* 【重要】表示位置を少し「上寄り」にします。これで天井のライトが入りやすくなります */
-    object-fit: cover; /* 枠いっぱいに広げる設定は維持 */
+/* --- ワークスペースの画像調整 --- */
+.facility-image-area.area-wide-work {
+    height: 550px; /* ワークスペースも縦を長くして、空間の広がりを見せます */
+}
+.facility-image-area.area-wide-work .facility-img {
+    object-position: center center;
+    object-fit: cover;
 }
 
-/* スマホでは縦が長すぎると見づらいので少し抑える調整 */
+/* --- スマホ(768px以下)用の高さ調整 --- */
 @media (max-width: 768px) {
-    .facility-image-area.living-zoom {
-        height: 350px; /* スマホではこのくらいがバランスが良いです */
+    .facility-image-area.area-wide {
+        height: 450px; /* スマホでも少し縦を長めにして見やすくします */
+    }
+    .facility-image-area.area-wide-work {
+        height: 400px;
     }
 }
 
